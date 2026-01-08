@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login - SmartVote</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e8edf3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 8px 16px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .container {
+      background: #ffffff;
+      width: 400px;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .logo img {
+      width: 65px;
+    }
+
+    .logo h2 {
+      margin-top: 12px;
+      font-size: 26px;
+    }
+
+    input {
+      width: 92%;
+      padding: 13px;
+      margin-top: 14px;
+      border: 1px solid #bbb;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .btn-login {
+      margin-top: 22px;
+      width: 95%;
+      padding: 12px;
+      border: none;
+      background: #2563eb;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+
+    .btn-login:hover {
+      background: #1e40af;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      font-style: italic;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+
+</head>
+<body>
+
+<button class="back-btn" onclick="window.location.href='index.html'">Back</button>
+
+<div class="container">
+
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Admin Logo">
+    <h2>Admin Login</h2>
+  </div>
+
+  <p class="tagline">"Secure access for authorized administrators only."</p>
+
+  <input type="text" placeholder="Voter ID" />
+  <input type="text" placeholder="Aadhar Card Number" />
+  <input type="text" placeholder="PAN Card Number" />
+  <input type="email" placeholder="Email Address" />
+  <input type="password" placeholder="Password" />
+
+  <button class="btn-login" onclick="window.location.href='AdminDashboard.html'">LOGIN</button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Online Voting System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: #f2f4f7;
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            background: #1f2937;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-area img {
+            width: 45px;
+            height: 45px;
+            margin-right: 15px;
+        }
+
+        .menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #d1d5db;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: #fff;
+        }
+
+        /* MAIN CONTENT */
+        .main-content {
+            width: 100%;
+            padding: 40px;
+            margin-top: 30px;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 35px;
+            color: #1f2937;
+        }
+
+        /* GRID CARDS */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 25px;
+            padding: 0 10%;
+        }
+
+        .card {
+            background: white;
+            padding: 26px;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: 0.3s;
+            cursor: pointer;
+            text-align: center;
+            border-left: 6px solid #1f2937;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 7px 20px rgba(0,0,0,0.25);
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+        .card p {
+            color: #4b5563;
+            font-size: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 50px;
+            padding: 18px;
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-area">
+            <img src="https://play-lh.googleusercontent.com/7cl4P-UE0QOJxLawN15ZZuCbKMdt-Wn96tNkPmf7MPtWKnErlDYIzhs27xE8UeHNYdY" alt="Logo">
+            <h2>SmartVote - Admin Panel</h2>
+        </div>
+
+        <div class="menu">
+            <a href="AdminDashboard.html">Dashboard</a>
+            <a href="AdminNotification.html">Notifications</a>
+            <a href="#">Settings</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div class="title">Election Categories</div>
+
+        <div class="grid">
+
+            <div class="card" onclick="location.href='AdminAAMDAAR.html'">
+                <h2>AAMDAAR</h2>
+                <p>View users, approvals and constituency details.</p>
+            </div>
+
+            <div class="card" onclick="location.href='AdminKHASDAAR.html'">
+                <h2>KHASDAAR</h2>
+                <p>Manage constituency elections and candidates.</p>
+            </div>
+
+            <div class="card" onclick="location.href='AdminNAGARSEVAK.html'">
+                <h2>NAGARSEVAK</h2>
+                <p>Monitor local area elections and reports.</p>
+            </div>
+
+            <div class="card" onclick="location.href='AdminNAGARADHAKSHYA.html'">
+                <h2>NAGAR-ADHAKSHYA</h2>
+                <p>Supervise city governance related elections.</p>
+            </div>
+
+            <div class="card" onclick="location.href='AdminUNION.html'">
+                <h2>UNION</h2>
+                <p>Union-level election analytics and approvals.</p>
+            </div>
+
+            <div class="card" onclick="location.href='AdminPM.html'">
+                <h2>PRIME MINISTER</h2>
+                <p>National election overview and user verification.</p>
+            </div>
+
+            <div class="card" onclick="location.href='AdminCABINET.html'">
+                <h2>CABBINET-MINISTRY</h2>
+                <p>Cabinet portfolio election management.</p>
+            </div>
+
+            <div class="card" onclick="location.href='AdminSYNICATE.html'">
+                <h2>SYNICATE</h2>
+                <p>Department-level election monitoring.</p>
+            </div>
+
+        </div>
+
+        <footer>
+            © 2025 Online Voting System | Admin Panel
+        </footer>
+
+    </div>
+
+</body>
+</html>

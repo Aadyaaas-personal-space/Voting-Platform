@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voting Platform - Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+    .nav-buttons button {
+      margin-left: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .nav-buttons button:hover {
+      background: #1e40af;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px;
+    }
+    .hero img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .description {
+      width: 70%;
+      margin: 40px auto;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .party-section {
+      display: flex;
+      width: 80%;
+      margin: 40px auto;
+      align-items: center;
+      gap: 40px;
+    }
+    .party-section img {
+      width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .party-description {
+      flex: 1;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://play-lh.googleusercontent.com/7cl4P-UE0QOJxLawN15ZZuCbKMdt-Wn96tNkPmf7MPtWKnErlDYIzhs27xE8UeHNYdY" alt="Platform Logo" />
+      <h2>SmartVote</h2>
+    </div>
+    <div class="nav-buttons">
+      <button onclick="window.location.href='UserLogin.html'">USERS</button>
+      <button onclick="window.location.href='AdminLogin.html'">ADMIN</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="https://www.drishtiias.com/images/blogs/109-Right-to-Vote---A-Cornerstone-of-Democracy-01-01-(2).jpg" alt="Election Image" />
+  </section>
+
+  <section class="description">
+    <p>
+      Welcome to <strong>SmartVote</strong>, a secure and transparent digital voting platform
+      designed to provide fairness, accuracy, and accessibility to every citizen. Our system ensures
+      seamless participation while maintaining high-level security standards.
+    </p>
+  </section>
+
+  <!-- Party 1 -->
+  <div class="party-section">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Indian_National_Congress_hand_logo.svg/250px-Indian_National_Congress_hand_logo.svg.png" alt="Party 1" />
+    <div class="party-description"><h2>The Indian National Congress</h2>is a party built on the pillars of democratic values, social harmony, and inclusive growth. With a legacy of leadership and nation-building, the party works to uphold equality, strengthen institutions, and empower citizens through progressive and people-centric policies. Guided by the vision of unity in diversity, the Congress aims to create a future where every individual has the opportunity to grow, contribute, and thrive.</div>
+  </div>
+
+  <!-- Party 2 -->
+  <div class="party-section" style="flex-direction: row-reverse;">
+    <img src="https://play-lh.googleusercontent.com/iXLXd3xcPhVoTviO3yoCQP3vdE4eD1wRVfnEWq1o9KhmC8ngKW0AriNtlnW11-DJnGA" alt="Party 2" />
+    <div class="party-description"><h2>The Bharatiya Janata Party</h2>focuses on strong governance, national development, and public-centered progress. Emphasizing economic growth, infrastructure expansion, and cultural values, the party aims to build a secure, self-reliant, and future-ready nation. Guided by decisive leadership and a commitment to public service, the BJP works toward empowering citizens, strengthening institutions, and driving holistic development across the country.</div>
+  </div>
+
+  <!-- Party 3 -->
+  <div class="party-section">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Logo_of_Shiv_Sena.svg/1200px-Logo_of_Shiv_Sena.svg.png" alt="Party 3" />
+    <div class="party-description"><h2>Shiv Sena</h2>is a party rooted in regional pride, public welfare, and strong leadership. Guided by the principles of cultural identity, social responsibility, and grassroots empowerment, the party works toward improving civic infrastructure, protecting regional interests, and fostering community development. With a focus on decisive governance and people-first initiatives, Shiv Sena aims to build a confident, self-reliant, and progressive society.</div>
+  </div>
+
+  <!-- Party 4 -->
+  <div class="party-section" style="flex-direction: row-reverse;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoyUZ7_l9KOCavxEi9V1_t2yoOGkB-2x_W8w&s" alt="Party 4" />
+    <div class="party-description"><h2>The Rashtrawadi Congress Party</h2>stands for responsible governance, social harmony, and sustainable national development. Built on the ideals of democracy and collective progress, the party strives to uplift every section of society through balanced policies and inclusive leadership. With a focus on unity, integrity, and people-centric growth, the Rashtrawadi Congress Party envisions a nation where opportunity, justice, and prosperity reach every citizen.</div>
+  </div>
+
+  <!-- Party 5 -->
+  <div class="party-section">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA_SY7ECWMdC86Kp0minthzLfzGQCAwSzCmw&s" alt="Party 5" />
+    <div class="party-description"><h2>The Vanchit Samaj Party</h2>is committed to uplifting communities that have long remained unheard and underserved. With a vision rooted in equality, justice, and social transformation, the party strives to create opportunities for every citizen, especially those pushed to the margins. Focused on fair representation and inclusive growth, the Vanchit Samaj Party works to ensure that every individual’s voice shapes a stronger, more equitable future for the nation.</div>
+  </div>
+
+  <!-- Party 6 -->
+  <div class="party-section" style="flex-direction: row-reverse;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Elephant_electoral_symbol.svg/1200px-Elephant_electoral_symbol.svg.png" alt="Party 6" />
+    <div class="party-description"><h2>The Bahujan Samaj Party</h2>stands as a symbol of social justice, equality, and collective progress. Rooted in the philosophy of empowering marginalized communities, the party envisions a nation where every individual has equal opportunities, dignity, and a strong voice in democracy. Guided by principles of integrity and transformative leadership, BSP continues its mission to uplift the Bahujan society and build a harmonious, progressive, and inclusive India for future generations.</div>
+  </div>
+
+  <footer>
+    © 2025 SmartVote. | All Rights Reserved
+  </footer>
+</body>
+</html>

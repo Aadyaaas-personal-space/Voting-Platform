@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Notifications - Online Voting System</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Poppins, sans-serif;
+            background: #f4f6f9;
+        }
+
+        .header {
+            background: #1e3c72;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            padding: 18px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .notification-card {
+            background: white;
+            padding: 18px 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            border-left: 6px solid #1e3c72;
+            transition: 0.2s;
+        }
+
+        .notification-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #1e3c72;
+        }
+
+        .description {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .time {
+            font-size: 13px;
+            color: #888;
+        }
+
+        /* Button */
+        .clear-btn {
+            display: block;
+            width: 180px;
+            margin: 20px auto;
+            padding: 12px 0;
+            background: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .clear-btn:hover {
+            background: #c9302c;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="header">Admin Notifications</div>
+
+    <div class="container">
+
+        <!-- Sample Notification 1 -->
+        <div class="notification-card">
+            <div class="title">New Voter Registration Request</div>
+            <div class="description">A new user has requested voter verification. Review and approve.</div>
+            <div class="time">2 hours ago</div>
+        </div>
+
+        <!-- Sample Notification 2 -->
+        <div class="notification-card">
+            <div class="title">System Alert</div>
+            <div class="description">Election server backup completed successfully.</div>
+            <div class="time">5 hours ago</div>
+        </div>
+
+        <!-- Sample Notification 3 -->
+        <div class="notification-card">
+            <div class="title">New Feedback Submitted</div>
+            <div class="description">A user has submitted feedback. Check the feedback section.</div>
+            <div class="time">1 day ago</div>
+        </div>
+
+        <!-- Clear Button -->
+        <button class="clear-btn">Clear All Notifications</button>
+
+    </div>
+
+</body>
+</html>

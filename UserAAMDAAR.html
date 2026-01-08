@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Panel - Online Voting System</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .party-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .party-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .party-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        }
+
+        .party-logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            background: #ddd;
+            display: inline-block;
+        }
+
+        .party-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        function voteParty(partyName) {
+            alert("You have selected: " + partyName + "\nYour vote has been recorded.");
+            // redirect after vote
+            window.location.href = "index.html"; // change if needed
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Choose Your Party</h1>
+
+    <div class="party-container">
+
+        <div class="party-card" onclick="voteParty('Bahujan Samaj Party')">
+            <div class="party-logo"></div>
+            <div class="party-name">Bahujan Samaj Party</div>
+        </div>
+
+        <div class="party-card" onclick="voteParty('Bharatiya Janata Party')">
+            <div class="party-logo"></div>
+            <div class="party-name">Bharat Janta Party</div>
+        </div>
+
+        <div class="party-card" onclick="voteParty('Indian National Congress')">
+            <div class="party-logo"></div>
+            <div class="party-name">Congress</div>
+        </div>
+
+        <div class="party-card" onclick="voteParty('Shiv Sena')">
+            <div class="party-logo"></div>
+            <div class="party-name">Shiv Sena</div>
+        </div>
+
+        <div class="party-card" onclick="voteParty('Nationalist Congress Party')">
+            <div class="party-logo"></div>
+            <div class="party-name">NCP</div>
+        </div>
+
+        <div class="party-card" onclick="voteParty('Aam Aadmi Party')">
+            <div class="party-logo"></div>
+            <div class="party-name">AAP</div>
+        </div>
+
+        <div class="party-card" onclick="voteParty('Communist Party of India')">
+            <div class="party-logo"></div>
+            <div class="party-name">CPI</div>
+        </div>
+
+        <div class="party-card" onclick="voteParty('Vanchit Bahujan Aaghadi')">
+            <div class="party-logo"></div>
+            <div class="party-name">VBA</div>
+        </div>
+
+        <div class="party-card" onclick="voteParty('Samajwadi Party')">
+            <div class="party-logo"></div>
+            <div class="party-name">Samajwadi Party</div>
+        </div>
+
+        <div class="party-card" onclick="voteParty('Rashtriya Janata Dal')">
+            <div class="party-logo"></div>
+            <div class="party-name">RJD</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
